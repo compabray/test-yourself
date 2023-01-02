@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import Rice from "./pages/Rice";
 import Gym from "./pages/Gym";
@@ -6,7 +6,7 @@ import Purity from "./pages/Purity";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
 
     <Routes>
       <Route path="/" element={<Home />} />
@@ -14,8 +14,7 @@ function App() {
       <Route path="/gymbro" element={<Gym/>} />
       <Route path="/purity" element={<Purity/>} />
     </Routes>
-      
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
