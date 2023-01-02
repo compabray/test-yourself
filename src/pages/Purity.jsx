@@ -1,7 +1,13 @@
+import PageBuilder from "../utils/pageBuilder";
+
 function Purity (){
+    
+    const questions = ["hola", "feo", "a"]    
+
     return (
+        
         <div>
-        <h1>Purity</h1>
+          <PageBuilder questions={questions}/>
         </div>
     )
 }

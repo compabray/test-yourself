@@ -1,7 +1,12 @@
+import PageBuilder from "../utils/pageBuilder";
+
 function Rice(){
+    const questions = ["hola", "feo", "a"]    
+    
     return (
+        
         <div>
-            <h1>Rice</h1>
+          <PageBuilder questions={questions}/>
         </div>
     )
 }
