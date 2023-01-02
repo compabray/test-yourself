@@ -1,4 +1,4 @@
-import testList from '../pages/testList.json';
+import {testList} from '../pages/testList';
 import { NavLink, } from 'react-router-dom';
 
 function List(){

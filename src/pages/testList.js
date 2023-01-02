@@ -1,4 +1,6 @@
-[
+
+
+export const testList = [
     {   
         "path":"ricepurity",
         "title": "Rice Purity Test",
@@ -18,4 +20,4 @@
         "description": "Check how pure you are with a few simple questions, and realize if you really are a child of god.",
         "icon": "🙏" 
     }
-]
+];
