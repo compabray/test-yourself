@@ -1,13 +1,14 @@
 import PageBuilder from "../utils/pageBuilder";
 
 function Purity (){
-    
-    const questions = ["hola", "feo", "a"]    
+    const title = "Purity test";
+    const description = "This is a test to see how pure you are";
+    const questions = ["hola", "feo", "a"];
 
     return (
         
         <div>
-          <PageBuilder questions={questions}/>
+          <PageBuilder questions={questions} title={title} description={description}/>
         </div>
     )
 }
