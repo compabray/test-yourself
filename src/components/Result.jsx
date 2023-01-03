@@ -3,8 +3,8 @@ const {Link} = require("react-router-dom");
 function Result ({title, result, questions}){
     return (
         <div className="fixed top-0 h-screen w-screen bg-zinc-900">
-            <div className="h-1/2 w-8/12 m-auto mt-32 flex jusify-center align-center flex-wrap">
-                <h2 className="text-6xl font-medium text-zinc-400 w-full text-center">
+            <div className="h-1/2 w-10/12 m-auto mt-32 flex jusify-center align-center flex-wrap sm:w-8/12">
+                <h2 className="text-5xl font-medium text-zinc-400 w-full text-center sm:text-6xl">
                     Your result in the 
                     <span className="text-purple-500"> {title} </span> 
                     was:
