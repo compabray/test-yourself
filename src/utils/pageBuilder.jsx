@@ -1,12 +1,22 @@
 import {useState} from "react";
+import Result from "../components/Result";
 
-function PageBuilder({questions, title, description}){
+function PageBuilder({ questions, title, description }){
 
     const [checkedState, setCheckedState] = useState(
         new Array(questions.length).fill(false)
-    )
+    );
+    
 
     const [total, setTotal] = useState(0);
+        
+    const [isShown, setIsShown] = useState(false);
+
+    const handleClick = () => {
+        setIsShown(true);
+    };
+    
+
 
     const handleOnChange = (position) => {
         const updatedCheckedState = checkedState.map((item, index) => {
@@ -28,7 +38,7 @@ function PageBuilder({questions, title, description}){
     setTotal(totalChecked);
     };
 
- 
+   
     return (
         <div>
             <h1 className="text-6xl p-6 text-semibold text-purple-400 text-center">{title}</h1>
@@ -49,8 +59,15 @@ function PageBuilder({questions, title, description}){
                 );}
             )}
             </div>
+            <div className="w-9/12 m-auto flex justify-center p-5"> 
+                <div className="cursor-pointer mt-5 p-8 text-3xl font-semibold text-purple-500 rounded bg-zinc-800 m-auto hover:text-purple-600" onClick={handleClick}>
+                    Get the results!
+                </div>
+                {isShown && <Result questions={questions} title={title} result={total}/>}
+            </div>
+           
             
-            <div>{total}</div>
+ 
         </div>
     )
 }
