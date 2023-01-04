@@ -9,7 +9,7 @@ function Result ({title, result, questions}){
                     <span className="text-purple-500"> {title} </span> 
                     was:
                 </h2>    
-                <h3 className="text-6xl font-semibold text-purple-500 mt-6 w-full text-center">{(result / questions.length) * 100}</h3>      
+                <h3 className="text-6xl font-semibold text-purple-500 mt-6 w-full text-center">{Math.round(((questions.length - result) / questions.length) * 100)}</h3>      
                 <Link to="/" className="cursor-pointer mt-16 p-6 text-2xl font-semibold text-purple-500 rounded bg-zinc-800 m-auto hover:text-purple-600" >
                     Back to home page!
                 </Link> 
