@@ -8,9 +8,9 @@ export const testList = [
         "icon":"😇 "
     },
     {   
-        "path":"gymbro",
-        "title": "Gym bro Test",
-        "description":"Check if in which level of the gym are you, and see if you are a real gym bro.",
+        "path":"gym",
+        "title": "Gym Test",
+        "description":"Check if in which level of the gym are you, and see if you are a real gym rat.",
         "icon":"💪"
     },
     
