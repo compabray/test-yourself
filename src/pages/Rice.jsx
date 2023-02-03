@@ -1,4 +1,4 @@
-import PageBuilder from "../utils/pageBuilder";
+import PageBuilder from "../utils/pageTemplate";
 
 function Rice(){
     const questions =  ["Held hands romantically?",

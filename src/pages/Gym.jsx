@@ -23,7 +23,7 @@ function Gym() {
             </h2>
             <div className='flex m-auto w-full p-5 justify-evenly flex-wrap lg:flex-nowrap sm:mt-16 md:w-9/12'>
            {gymList.map(({path, title, description, icon}) => {   
-            return (<NavLink to={path} className=' bg-zinc-800 my-2 p-6 w-full rounded-md hover:bg-zinc-700  sm:w-64' key={path}>
+            return (<NavLink to={`/gym${path}`} className=' bg-zinc-800 my-2 p-6 w-full rounded-md hover:bg-zinc-700  sm:w-64' key={path}>
 
                     <h3 className="text-3xl text-zinc-300 text-center" key={title}>
                         {title} {icon}
