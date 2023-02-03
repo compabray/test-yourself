@@ -11,19 +11,19 @@ function GymResult ({ gender, result, questions}){
 
  const getStage = () => {
       if (value >= 90 && value <= 100){
-           return setStage("Mr Olympia");
+           return setStage("Mr Olympia 🧬");
         } else if (value >= 80 && value < 90){
-            return setStage("Gorilla");
+            return setStage("Silverback Gorilla 🦍");
         } else if (value >= 70 && value < 80){
-            return setStage("Advanced");
+            return setStage("Advanced 🥶");
         } else if (value >= 50 && value < 70){
-           return setStage(`Gym ${gender}`);
+           return setStage(`Gym ${gender} 🔱`);
         } else if (value >= 30 && value < 50) {
-            return setStage("Beginner");
+            return setStage("Beginner 🗿");
         } else if (value >= 15 && value < 30){
-            return setStage(`Baby Gym ${gender}`);
+            return setStage(`Baby Gym ${gender} 🍼`);
         } else if (value >= 0 && value < 15){
-            return setStage("Newbie");
+            return setStage("Newbie 🥸");
         }
     }
 
