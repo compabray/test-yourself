@@ -1,7 +1,7 @@
 import Template from "../utils/gymTemplate";
 
 function GymGirl () {
-    const title = "Gym Test for guys";
+    const title = "Gym Test for girls";
     const description = "This is a test to see in which level of the gym you are, from a newbie to a really experimented person. This test is focused on guys, because there are differences between genders.";
     const questions = [
         "Do you go to the gym 3 or more times per week?",
